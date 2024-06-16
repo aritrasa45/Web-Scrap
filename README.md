@@ -3,11 +3,11 @@
 </h1>
 
 <h2>What this tool can do? 🦸 </h2>
-<br></br>
+
 
 <li> its a simple python tool to scrap & save html files of the given webside</li>
 
-
+<br></br>
 
 >[!IMPORTANT]
 >You can easily make your own webside html scrapper tool by using this python commands ⬇️
@@ -19,16 +19,14 @@ x = https://google.com
 y = requests.get(x)
 print(y)
 ```
-<br></br>
+
 
 <h3 align="center">
   The end 🔚
 </h3>
 
-
+<br</br>
 <h2>How to install?</h2>
-
-<br></br>
 
 <pre>git clone https://github.com/aritrasa45/Web-Html-Scraper.git</pre>
 <br></br>
