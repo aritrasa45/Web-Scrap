@@ -3,14 +3,14 @@
 
 import time , os , sys
 
+
 try:
 	import requests
 
 except:
 	os.system('pip3 install requests')
-        time.sleep(1)
+	time.sleep(1)
 	os.system('clear')
-
 			
 
 
@@ -26,6 +26,7 @@ END = '\033[0m'
 def hello():
 	os.system('clear')
 	print("Checking required pakages to install")
+	time.sleep(2)
 
 while True:
 	link = input(f"{GREEN}• The link [ :  {END}") 
