@@ -26,7 +26,7 @@ print(y)
 
 <pre>git clone https://github.com/aritrasa45/Web-Html-Scraper.git</pre>
 
-<pre>cd tools</pre>
+<pre>cd Tool</pre>
 
 <pre>python main.py</pre>
 
