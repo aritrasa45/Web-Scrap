@@ -28,9 +28,9 @@ print(y)
 <h2>How to install?</h2>
 
 <pre>git clone https://github.com/aritrasa45/Web-Html-Scraper.git</pre>
-<br>hi</br>
+
 <pre>cd tools</pre>
-<br></br>
+
 <pre>python main.py</pre>
 
 
