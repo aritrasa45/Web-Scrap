@@ -21,9 +21,6 @@ print(y)
 ```
 
 
-<h3 align="center">
-  The end 🔚
-</h3>
 
 <h2>How to install?</h2>
 
@@ -32,5 +29,10 @@ print(y)
 <pre>cd tools</pre>
 
 <pre>python main.py</pre>
+
+
+<h3 align="center">
+  The end 🔚
+</h3>
 
 
