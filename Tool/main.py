@@ -1,4 +1,5 @@
-# by aritrasa
+# by aritrasa 
+# instagram [0aritrasa1]
 
 import time , os , sys
 
@@ -7,11 +8,12 @@ try:
 
 except:
 	os.system('pip3 install requests')
+        time.sleep(1)
+	os.system('clear')
 
 			
 
 
-os.system('clear')
 
 DARKCYAN = '\033[36m'
 BLUE = '\033[94m'
@@ -19,6 +21,11 @@ GREEN = '\033[92m'
 RED = '\033[91m'
 BOLD = '\033[1m'
 END = '\033[0m'
+
+
+def hello():
+	os.system('clear')
+	print("Checking required pakages to install")
 
 while True:
 	link = input(f"{GREEN}• The link [ :  {END}") 
@@ -60,9 +67,16 @@ while True:
 	continue
 	
 	
-	
-filename = input(f"{GREEN}¥ filename  [: {END}")
-
+while True:
+	filename  = input(f"{GREEN}¥ filename  [: {END}").strip()
+	if filename == "":
+		print(f"{RED}filename cannot be blank{END}")
+		time.sleep(1)
+		os.system('clear')
+		continue 
+		
+	else:
+		break	
 
 with open (f"{filename}.html", "a") as file:
 	file.write(f"{html}")
@@ -72,5 +86,7 @@ with open (f"{filename}.html", "a") as file:
 time.sleep(2)
 		
 os.system('clear')
-print(f"{DARKCYAN}▪︎ ¥ [{name1}.html] saved in storage {END}")
+print(f"{DARKCYAN}▪︎ ¥ [{filename}.html] saved in storage {END}")
 
+if __name__ == "__main__":
+		hello()
