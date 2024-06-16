@@ -3,8 +3,10 @@
 </h1>
 
 <h2>What this tool can do? 🦸 </h2>
+<br></br>
 
 <li> its a simple python tool to scrap & save html files of the given webside</li>
+
 
 
 >[!IMPORTANT]
@@ -17,6 +19,7 @@ x = https://google.com
 y = requests.get(x)
 print(y)
 ```
+<br></br>
 
 <h3 align="center">
   The end 🔚
@@ -27,4 +30,10 @@ print(y)
 
 <br></br>
 
-<pre> hi</pre>
+<pre>git clone https://github.com/aritrasa45/Web-Html-Scraper.git</pre>
+<br></br>
+<pre>cd tools</pre>
+<br></br>
+<pre>python main.py</pre>
+
+
