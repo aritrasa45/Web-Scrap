@@ -61,10 +61,10 @@ while True:
 	
 	
 	
-name1 = input(f"{GREEN}¥ filename  [: {END}")
+filename = input(f"{GREEN}¥ filename  [: {END}")
 
 
-with open (f"{name1}.html", "a") as file:
+with open (f"{filename}.html", "a") as file:
 	file.write(f"{html}")
 	file.close()
 	
