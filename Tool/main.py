@@ -13,7 +13,7 @@ except:
 	os.system('clear')
 			
 
-
+os.system('clear')
 
 DARKCYAN = '\033[36m'
 BLUE = '\033[94m'
@@ -23,10 +23,6 @@ BOLD = '\033[1m'
 END = '\033[0m'
 
 
-def hello():
-	os.system('clear')
-	print("Checking required pakages to install")
-	time.sleep(2)
 
 while True:
 	link = input(f"{GREEN}• The link [ :  {END}") 
@@ -89,5 +85,4 @@ time.sleep(2)
 os.system('clear')
 print(f"{DARKCYAN}▪︎ ¥ [{filename}.html] saved in storage {END}")
 
-if __name__ == "__main__":
-		hello()
+
