@@ -25,11 +25,10 @@ print(y)
   The end 🔚
 </h3>
 
-<br</br>
 <h2>How to install?</h2>
 
 <pre>git clone https://github.com/aritrasa45/Web-Html-Scraper.git</pre>
-<br></br>
+<br>hi</br>
 <pre>cd tools</pre>
 <br></br>
 <pre>python main.py</pre>
