@@ -10,9 +10,10 @@ scrapper which scraps and saves in
 the input file..it aslo have cloudflare
 bypasser if required
 
+<br>
+
 <img src="https://github.com/aritrasa45/Web-Scrap/blob/main/git_img.jpg" style="display:block; margin: 0 auto;">
 
-<br></br>
 
 >[!IMPORTANT]
 >You can easily make your own webside html scrapper tool by using this python commands ⬇️
