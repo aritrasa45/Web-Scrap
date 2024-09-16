@@ -1,88 +1,88 @@
-# by aritrasa 
-# instagram [0aritrasa1]
-
-import time , os , sys
-
-
-try:
-	import requests
-
-except:
-	os.system('pip3 install requests')
-	time.sleep(1)
-	os.system('clear')
-			
-
-os.system('clear')
-
-DARKCYAN = '\033[36m'
-BLUE = '\033[94m'
-GREEN = '\033[92m'
-RED = '\033[91m'
-BOLD = '\033[1m'
-END = '\033[0m'
 
 
 
-while True:
-	link = input(f"{GREEN}• The link [ :  {END}") 
-	if  'https://' in link or 'http://' in link :
-		print(f"{DARKCYAN}Processing...{END}")
-		break
-		
-		
-	else:
-		os.system('clear')
-		print(f"{BOLD}{RED}Start with\n[http://]     or        [https://]{END}")
-		continue
 
 
-x = f'{link}'
-try:
-	data = requests.get(x)
-	html = data.text
-	
-except requests.exceptions.InvalidURL as e:
-    print(f"{RED}! Invalid URL error: {e}{END}")
-    sys.exit()
-except requests.exceptions.HTTPError as e:
-    print(f"{RED}! HTTP error: {e}{END}")		
-    sys.exit()
 
-while True:
-	cont = input(f"\n{GREEN}Do you wanna continue [Y/n] : {END}")
-	
-	if cont =='y' or cont =='Y' or cont=='':
-		break
-		
-	elif cont =='n' or cont =='N':
-		sys.exit()
-			
-	else:
-		print(f"{BOLD}{RED}! Wrong input{END}")
-		os.system('clear')
-	continue
-	
-	
-while True:
-	filename  = input(f"{GREEN}¥ filename  [: {END}").strip()
-	if filename == "":
-		print(f"{RED}filename cannot be blank{END}")
-		time.sleep(1)
-		os.system('clear')
-		continue 
-		
-	else:
-		break	
+import requests
+import cfscrape 
+import time
+import sys
+import os
 
-with open (f"{filename}.html", "a") as file:
-	file.write(f"{html}")
-	file.close()
-	
-	
-time.sleep(2)
-		
-os.system('clear')
-print(f"{DARKCYAN}▪︎ ¥ [{filename}.html] saved in storage {END}")
 
+scraper = cfscrape.create_scraper()
+Headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36"}
+
+
+R = '\033[31m' # red 
+G = '\033[32m' # green 
+Y = '\033[33m' # yellow
+E = '\033[0m' # end
+
+
+def request_(url,filename):
+    
+    time.sleep(1)
+    try:
+        req_res = requests.get(url)
+        with open(filename,"w") as f:
+            f.write(req_res.content.decode())
+            return True            
+            
+
+    except:
+        return False
+
+
+def cfscrape(url,filename):
+    
+    time.sleep(1)
+    try:
+        cfs_res = scraper.get(url,headers=Headers)
+        with open(filename,"w") as f:
+            f.write(cfs_res.content.decode())
+            return True
+
+
+    except:
+        return False
+        
+        
+
+
+def main():
+    
+    if len(sys.argv) == 3:
+        
+        link = sys.argv[1]
+        filename = sys.argv[2]
+                
+        req_response = request_(link,filename)
+        if req_response is True:
+            print(f"{Y}[$]{E} file successfully saved in {G}{os.getcwd()}/{filename}{E}")
+            sys.exit(0)
+            
+        elif req_response is False:
+            print(f"{R}{req_response}{E} : Some kind of WAF might blocking the connection !! Trying again") 
+            
+            
+            cfs_response = cfscrape(link,filename)
+            if cfs_response is True:
+                print(f"{Y}[$]{E} file successfully saved in {G}{os.getcwd()}/{filename}{E}")
+                
+            elif cfs_response is False:
+                print(f"{Y}[!]{R}Failed to establish connection{E}")          
+                sys.exit(1)      
+                
+
+    else:
+        print(f"{R}[!]{Y}READ THE MANUAL BEFORE USE{E}")
+
+
+
+
+
+if __name__ == '__main__':
+    main()
 
