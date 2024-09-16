@@ -8,7 +8,7 @@
 <li> its a automated website html 
 scrapper which scraps and saves in
 the input file..it aslo have cloudflare
-bypasser if required read<a href="https://github.com/aritrasa45/Web-Scrap/blob/main/Tool/Howto.txt">Howto.txt</a> to know more!!</li>
+bypasser if required read <a href="https://github.com/aritrasa45/Web-Scrap/blob/main/Tool/Howto.txt">How to Use</a> to know more!!</li>
 
 
 
