@@ -8,7 +8,7 @@
 <li> its a automated website html 
 scrapper which scraps and saves in
 the input file..it aslo have cloudflare
-bypasser if required
+bypasser if required</li>
 
 <br>
 
