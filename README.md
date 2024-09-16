@@ -10,7 +10,7 @@ scrapper which scraps and saves in
 the input file..it aslo have cloudflare
 bypasser if required</li>
 
-<br>
+
 
 <img src="https://github.com/aritrasa45/Web-Scrap/blob/main/git_img.jpg" style="display:block; margin: 0 auto;">
 
