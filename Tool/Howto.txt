@@ -1,0 +1,21 @@
+
+
+
+____________________________________________
+
+      HOW TO USE WEB-SCRAPPER 
+
+
+  Python filename.py link output-file
+
+
+-[link] is the link from where you want
+to fletch all the html content from..
+for ex:- https://google.com
+
+
+-[output-file] is the file where the 
+tool will save all the html content
+on..
+
+____________________________________________
