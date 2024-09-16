@@ -5,7 +5,12 @@
 <h2>What this tool can do? 🦸 </h2>
 
 
-<li> its a simple python tool to scrap & save html files of the given webside</li>
+<li> its a automated website html 
+scrapper which scraps and saves in
+the input file..it aslo have cloudflare
+bypasser if required
+
+<img src="https://github.com/aritrasa45/Web-Scrap/blob/main/git_img.jpg" style="display:block; margin: 0 auto;">
 
 <br></br>
 
@@ -24,11 +29,11 @@ print(y)
 
 <h2>How to install?</h2>
 
-<pre>git clone https://github.com/aritrasa45/Web-Html-Scraper.git</pre>
+<pre>git clone https://github.com/aritrasa45/Web-Scrap.git</pre>
 
+<pre>cd Web-Scrap</pre>
 <pre>cd Tool</pre>
-
-<pre>python main.py</pre>
+<pre>python main.py [link] [output-filename]</pre>
 
 
 <h3 align="center">
